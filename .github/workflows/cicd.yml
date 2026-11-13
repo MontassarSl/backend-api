@@ -27,4 +27,4 @@ jobs:
         context: .
         push: true
         tags: |
-          ${{ secrets.DOCKERHUB_USERNAME }}/backend-api-image-cicd:v1
+          ${{ secrets.DOCKERHUB_USERNAME }}/backend-api-image-cicd:${{ github.run_number }}
