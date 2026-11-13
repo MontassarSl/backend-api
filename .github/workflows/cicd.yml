@@ -1,4 +1,4 @@
-name: CI/CD backend-api cicd
+name: CI/CD backend-api cicd test
 
 on:
   push:
