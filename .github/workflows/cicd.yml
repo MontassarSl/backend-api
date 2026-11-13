@@ -3,7 +3,9 @@ name: CI/CD backend-api cicd
 on:
   push:
     branches: [ "main" ]
-  
+
+env:
+  IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/backend-api-image-cicd:${{ github.run_number }} 
 
 jobs:
 
@@ -27,4 +29,4 @@ jobs:
         context: .
         push: true
         tags: |
-          ${{ secrets.DOCKERHUB_USERNAME }}/backend-api-image-cicd:${{ github.run_number }}
+          ${{ env.IMAGE_NAME }}
