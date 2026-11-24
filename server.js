@@ -47,7 +47,11 @@ app.get("/test", (req, res) => {
   res.send("Hello Team");
 });
 
+<<<<<<< HEAD
 app.get("/abc", (req, res) => {
+=======
+app.get("/ABC", (req, res) => {
+>>>>>>> a75666da4d723f28ae9a4d546918fd4e5d5ab184
   res.send("Hello ABC");
 });
 
