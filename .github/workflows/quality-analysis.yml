@@ -1,4 +1,4 @@
-name: Quality Analysis pipeline .
+name: Quality Analysis pipeline cicd .
 
 on:
   pull_request:
