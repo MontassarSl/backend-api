@@ -52,6 +52,10 @@ app.get("/abc", (req, res) => {
   res.send("Hello ABC");
 });
 
+app.get("/v3/status", (req, res) => {
+  res.send("Hello v3 is alpha version of the API");
+});
+
 app.get("/auth", (req, res) => {
   res.send("This is a auth endpoint. Authentication logic will be implemented here.");
 });
